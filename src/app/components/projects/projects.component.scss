@@ -1,0 +1,14 @@
+#detailModal {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #detailModal.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #detailModal:not(.hidden) {
+    opacity: 1;
+    pointer-events: all;
+  }
+  

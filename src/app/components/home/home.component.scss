@@ -1,0 +1,87 @@
+nav {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+  }
+  
+  nav.scrolled {
+    background-color: rgba(248, 248, 248, 0.938);
+    padding: 10px 5px; /* Réduisez l'espacement pour une meilleure esthétique */
+    color: black;
+  }
+  
+  nav {
+    transition: background-color 0.3s ease, padding 0.3s ease, color 0.3s ease;
+  
+    &.scrolled {
+      background-color: rgba(248, 248, 248, 0.938); /* Fond blanc */
+      padding: 10px 5px;
+    }
+  
+    &.text-black {
+      color: black; /* Texte en noir */
+    }
+  
+    &.text-white {
+      color: white; /* Texte en blanc */
+    }
+  }
+  
+/* Style général pour les logos */
+.logo-container {
+  opacity: 0;
+  transform: translateX(-100%) scale(0.5); /* Déplacement initial et petite taille */
+  animation: moveLeftToRight 10s ease-in-out infinite;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  will-change: transform, opacity;
+}
+
+/* Délai de chaque logo pour un effet de séquence */
+.logo-container:nth-child(1) {
+  animation-delay: 0s;
+}
+.logo-container:nth-child(2) {
+  animation-delay: 13.3s;
+}
+.logo-container:nth-child(3) {
+  animation-delay: 5.66s;
+}
+
+/* Animation de mouvement horizontal et d'agrandissement */
+@keyframes moveLeftToRight {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%) scale(0.5); /* Logo invisible et à gauche */
+  }
+  25% {
+      opacity: 0.5;
+      transform: translateX(25%) scale(0.8); /* Le logo commence à apparaître et se rapproche */
+  }
+  50% {
+      opacity: 1;
+      transform: translateX(50%) scale(1); /* Logo complètement visible au centre */
+  }
+  75% {
+      opacity: 0.5;
+      transform: translateX(75%) scale(0.8); /* Le logo commence à s'éloigner */
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(100%) scale(0.5); /* Logo invisible et à droite */
+  }
+}
+
+/* Effet de survol pour mettre en valeur les logos */
+.logo-container:hover .logo {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+/* Transition douce pour les logos */
+.logo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+
+  
+  
+  

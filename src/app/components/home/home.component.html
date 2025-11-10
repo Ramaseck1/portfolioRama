@@ -1,0 +1,51 @@
+<div class="relative h-screen bg-cover bg-center"  id="home" style="background-image: url('assets/images/images.png')">
+  <!-- Navbar -->
+  <nav [class.scrolled]="isScrolled" [class.text-black]="isScrolled" [class.text-white]="!isScrolled"
+    class="fixed top-0 left-0 w-full flex justify-around items-center p-5 bg-opacity-75 shadow-md z-50 transition-all duration-300">
+    <h1 class="text-2xl font-bold italic">Rama Dev</h1>
+    <ul class="flex space-x-8 text-lg">
+      <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#about" class="hover:text-gray-300">About</a></li>
+      <li><a href="#portfolio" class="hover:text-gray-300">Projects</a></li>
+      <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+<!--       <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+ -->      <li class="bg-gray-300 ml-6">
+        <a href="assets/images/CVRamaseck.pdf" class="hover:text-gray-300 bg-gray-300" target="_blank" download="CV_Rama_Seck">
+          <button class="px-4 py-2 border-2 text-black border-white rounded-md hover:bg-white hover:text-black transition-all">
+            Télécharger mon CV
+          </button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Main Content -->
+  <div class="flex flex-col items-center justify-center h-full text-center text-white">
+    <div class="relative w-full h-40 flex justify-center mr-20 items-center overflow-hidden">
+      <div class="logo-container absolute">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="logo w-24">
+      </div>
+      <div class="logo-container absolute">
+        <img src="assets/images/html.png" alt="HTML" class="logo w-24">
+      </div>
+      <div class="logo-container absolute">
+        <img src="assets/images/php.png" alt="PHP" class="logo w-28">
+      </div>
+    </div>
+    
+
+    <h1 class="text-5xl font-bold mb-4">RAMA SECK</h1>
+    <p class="text-xl mb-6">Developpeuse Fullstack</p>
+    
+    <!-- Logos -->
+    <!-- Carrousel des logos -->
+      <!-- Logos avec animation de zoom -->
+   
+  </div>
+
+  <svg class="absolute bottom-[-1px] h-106" style="width: 100%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="white" fill-opacity="1"
+      d="M0,224L48,218.7C96,213,192,203,288,208C384,213,480,235,576,229.3C672,224,768,192,864,186.7C960,181,1056,203,1152,202.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L0,320Z"
+      style="stroke: none;"></path>
+  </svg>
+</div>
