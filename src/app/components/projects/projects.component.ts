@@ -24,7 +24,7 @@ export class ProjectsComponent {
       image: 'assets/images/site.png',
       description: 'site de vente de produit',
       languages: 'Reactjs, TypeScript, CSS',
-      siteUrl: 'https://www.njabatech.com',
+      siteUrl: 'https://njabatech-22we.onrender.com',
      },
       {
       title: 'Application Gestion des GIE',
